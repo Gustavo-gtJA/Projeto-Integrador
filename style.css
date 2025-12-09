@@ -57,6 +57,69 @@
 
 
 
+/* ==================================== */
+/* 4. ESTILOS DA SEÇÃO HERO (MEIO) */
+/* ==================================== */
+
+.hero-section {
+    
+    height: 400px; 
+    width: 100%;
+    
+    
+    background-image: url('../img/estacionamento.avif');
+    background-size: cover; 
+    background-position: center; 
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+    text-align: center;
+}
+
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 0; 
+}
+
+.hero-title, .email-input, .promo-text {
+    z-index: 2; 
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    max-width: 60%; 
+}
+
+.email-input {
+    padding: 15px 20px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.promo-text {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+
 
 
 
