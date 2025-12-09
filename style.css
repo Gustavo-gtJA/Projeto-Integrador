@@ -1,60 +1,81 @@
 
-header {
+.cabecalho-principal {
     display: flex;
-    /* Coloca .logo à esquerda e nav à direita */
     justify-content: space-between; 
-    
-    /* 🔑 ESSENCIAL: Centraliza verticalmente o logo e a navegação */
     align-items: center; 
     
-    /* Altura e padding para dar espaço (ajuste conforme necessário) */
-    height: 60px; 
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd; /* Linha de baixo sutil como no exemplo */
+    height: 85px; 
+    padding: 0 40px; 
+    border-bottom: 1px solid #ddd;
 }
-nav ul {
-    display: flex; /* Coloca os <li> lado a lado */
-    list-style: none; /* Remove os marcadores de lista */
+
+.logo {
+    display: flex;
+    align-items: center; 
+}
+
+.logo-icone {
+    width: 85px; 
+    height: 60px;
+    margin-right: 15px; 
+}
+
+#titulo-texto {
+    font-size: 2.2em;
+    font-weight: 600; 
+    padding-bottom: 3px;
+    
+    transform: translateY(-2px); 
+}
+
+.menu-principal {
+    display: flex; 
+    list-style: none;
     padding: 0;
     margin: 0;
+    gap: 35px; 
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-/* Aplica o estilo ao link <a> dentro do <li> */
-nav ul li a {
+.menu-principal li a {
     display: flex;
-    /* 🔑 ESSENCIAL: Centraliza a imagem e o texto do link verticalmente */
     align-items: center; 
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: inherit; /* Mantém a cor do texto padrão */
-    font-size: 0.9em;
+    text-decoration: none; 
+    color: inherit; 
+    font-size: 1.05em;
 }
 
-nav ul li img {
-    /* 🔑 ESSENCIAL: Define o tamanho menor para os ícones de navegação */
-    width: 35px; /* Ícones menores do que o logo */
-    height: 35px; 
-    margin-right: 5px;
+.menu-principal li img {
+    width: 25px; 
+    height: 25px; 
+    margin-right: 8px;
 }
 
-#titulo {
-    /* REMOVA ESTA LINHA: top: -100px; */
+
+/* Celular e Tablete (Sistema)
+=============================================*/
+
+@media (max-width: 768px) {
     
-    font-size: 1.9em; 
-    font-weight: 500;
-    border-bottom: 2px solid black; 
-    padding-bottom: 2px;
+    
+    header {
+       
+        flex-wrap: wrap; 
+        justify-content: center; 
+        height: auto; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        margin-top: 15px; 
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
 }
 
-#principal {
-    /* Remova o padding: 10px; */
-    /* Remova o height: 80px; */
-    
-    /* Defina um tamanho fixo e razoável para o logo (ex: 30px) */
-    width: 50px; 
-    height: 40px;
-    margin-right: 10px; /* Adiciona espaço entre o ícone e o texto */
-}
+/* ----------------------------- Fim do Sistema ---------------------------------- */
+
+
+/* Fim do CSS
