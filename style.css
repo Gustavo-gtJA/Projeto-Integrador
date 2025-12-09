@@ -1,0 +1,60 @@
+
+header {
+    display: flex;
+    /* Coloca .logo à esquerda e nav à direita */
+    justify-content: space-between; 
+    
+    /* 🔑 ESSENCIAL: Centraliza verticalmente o logo e a navegação */
+    align-items: center; 
+    
+    /* Altura e padding para dar espaço (ajuste conforme necessário) */
+    height: 60px; 
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Linha de baixo sutil como no exemplo */
+}
+nav ul {
+    display: flex; /* Coloca os <li> lado a lado */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Aplica o estilo ao link <a> dentro do <li> */
+nav ul li a {
+    display: flex;
+    /* 🔑 ESSENCIAL: Centraliza a imagem e o texto do link verticalmente */
+    align-items: center; 
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit; /* Mantém a cor do texto padrão */
+    font-size: 0.9em;
+}
+
+nav ul li img {
+    /* 🔑 ESSENCIAL: Define o tamanho menor para os ícones de navegação */
+    width: 35px; /* Ícones menores do que o logo */
+    height: 35px; 
+    margin-right: 5px;
+}
+
+#titulo {
+    /* REMOVA ESTA LINHA: top: -100px; */
+    
+    font-size: 1.9em; 
+    font-weight: 500;
+    border-bottom: 2px solid black; 
+    padding-bottom: 2px;
+}
+
+#principal {
+    /* Remova o padding: 10px; */
+    /* Remova o height: 80px; */
+    
+    /* Defina um tamanho fixo e razoável para o logo (ex: 30px) */
+    width: 50px; 
+    height: 40px;
+    margin-right: 10px; /* Adiciona espaço entre o ícone e o texto */
+}
