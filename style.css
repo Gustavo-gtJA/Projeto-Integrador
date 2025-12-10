@@ -1,3 +1,6 @@
+/*=======================================*/
+/* PARTE DE CIMA DO SITE */
+/*=======================================*/
 
 .cabecalho-principal {
     display: flex;
@@ -57,9 +60,9 @@
 
 
 
-/* ==================================== */
-/* 4. ESTILOS DA SEÇÃO HERO (MEIO) */
-/* ==================================== */
+/* ========================================== */
+/*  PARTE DO MEIO DO SITE JUNTO COM A FOTO
+/* ========================================== */
 
 .hero-section {
     
@@ -120,6 +123,26 @@
 }
 
 
+/*=====================================================
+PARTE DE BAIXO DO SITE
+=======================================================*/
+
+.baixo img {
+    margin-right: 0px;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-top: 30px;
+    
+}
+#frase {
+    margin-top: 50px;
+    text-align: center;
+    background-color: blueviolet;
+}
 
 
 
@@ -127,8 +150,10 @@
 
 
 
+
+/*===========================================*/
 /* Celular e Tablete (Sistema)
-=============================================*/
+/*===========================================*/
 
 @media (max-width: 768px) {
     
