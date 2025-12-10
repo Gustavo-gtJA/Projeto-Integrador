@@ -127,45 +127,21 @@
 PARTE DE BAIXO DO SITE
 =======================================================*/
 
-/*.baixo img {
-    margin-right: 0px;
-    justify-content: center;
-    text-align: center;
-    height: 35px;
-    width: 35px;
-    margin-left: 100px;
-    margin-right: 10px;
-    margin-top: 30px;
-    
-} */
-
-/* 1. ESTILO DO CONTÊINER (Onde aplicamos o Flexbox) */
-.alinhar-elementos {
-    /* Faz a imagem e o texto ficarem na mesma linha */
+.beneficios {
     display: flex; 
-    
-    /* Centraliza a imagem e o texto verticalmente (no meio da linha) */
     align-items: center; 
-    
-    /* Opcional: Adiciona um espaçamento entre a imagem e o texto */
     gap: 10px; 
-    
-    /* Opcional: Centraliza o contêiner horizontalmente na tela, se precisar */
     margin: 30px auto; 
-    width: fit-content; /* Faz o contêiner ter apenas a largura do seu conteúdo */
+    width: fit-content; 
 }
 
-/* 2. ESTILO DA IMAGEM (Seu código original ajustado) */
-.alinhar-elementos img {
+.beneficios img {
     height: 35px;
     width: 35px;
-    /* Removendo margins complexas, use padding ou gap no contêiner para espaçamento */
     margin: 0; 
 }
 
-/* 3. ESTILO DO TEXTO (Se precisar de ajustes no texto) */
-.alinhar-elementos p {
-    /* Remove margens padrão do parágrafo que podem atrapalhar o alinhamento */
+.beneficios p {
     margin: 0; 
 }
 
