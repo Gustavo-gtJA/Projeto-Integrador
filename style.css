@@ -127,7 +127,7 @@
 PARTE DE BAIXO DO SITE
 =======================================================*/
 
-.baixo img {
+/*.baixo img {
     margin-right: 0px;
     justify-content: center;
     text-align: center;
@@ -137,7 +137,39 @@ PARTE DE BAIXO DO SITE
     margin-right: 10px;
     margin-top: 30px;
     
+} */
+
+/* 1. ESTILO DO CONTÊINER (Onde aplicamos o Flexbox) */
+.alinhar-elementos {
+    /* Faz a imagem e o texto ficarem na mesma linha */
+    display: flex; 
+    
+    /* Centraliza a imagem e o texto verticalmente (no meio da linha) */
+    align-items: center; 
+    
+    /* Opcional: Adiciona um espaçamento entre a imagem e o texto */
+    gap: 10px; 
+    
+    /* Opcional: Centraliza o contêiner horizontalmente na tela, se precisar */
+    margin: 30px auto; 
+    width: fit-content; /* Faz o contêiner ter apenas a largura do seu conteúdo */
 }
+
+/* 2. ESTILO DA IMAGEM (Seu código original ajustado) */
+.alinhar-elementos img {
+    height: 35px;
+    width: 35px;
+    /* Removendo margins complexas, use padding ou gap no contêiner para espaçamento */
+    margin: 0; 
+}
+
+/* 3. ESTILO DO TEXTO (Se precisar de ajustes no texto) */
+.alinhar-elementos p {
+    /* Remove margens padrão do parágrafo que podem atrapalhar o alinhamento */
+    margin: 0; 
+}
+
+
 
 .botao-verde {
     display: inline-block;
@@ -153,13 +185,20 @@ PARTE DE BAIXO DO SITE
 
 }
 
-
 .texto-final {
-    text-align: center;
+    width: 600px;
+    margin: 35px auto 0 auto;
     background-color: #E0E2E0;
     color: rgba(0, 0, 0, 0.719);
-    margin-top: 20px;
-
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 15px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
 }
 
 
