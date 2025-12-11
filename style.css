@@ -1,57 +1,67 @@
-/*=======================================*/
 /* PARTE DE CIMA DO SITE */
+
 /*=======================================*/
+
+
 
 .cabecalho-principal {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    
-    height: 85px; 
-    padding: 0 40px; 
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 0 40px;
     border-bottom: 1px solid #ffffff;
 }
 
+
+
 .logo {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
+
+
 .logo-icone {
-    width: 85px; 
+    width: 85px;
     height: 60px;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
+
+
 
 #titulo-texto {
     font-size: 2.2em;
-    font-weight: 400px; 
+    font-weight: 400px;
     padding-bottom: 3px;
-    
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 .menu-principal {
-    display: flex; 
+
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 35px; 
+    gap: 35px;
 }
+
 
 .menu-principal li a {
     display: flex;
-    align-items: center; 
-    text-decoration: none; 
-    color: inherit; 
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
     font-size: 1.05em;
 }
 
+
 .menu-principal li img {
-    width: 25px; 
-    height: 25px; 
+    width: 25px;
+    height: 25px;
     margin-right: 8px;
 }
+
 
 .chamada {
     align-items: center;
@@ -60,29 +70,27 @@
 
 
 
-/* ========================================== */
-/*  PARTE DO MEIO DO SITE JUNTO COM A FOTO
-/* ========================================== */
+/* ==================================== */
+
+/* 4. ESTILOS DA SEÇÃO HERO (MEIO) */
+
+/* ==================================== */
+
 
 .hero-section {
-    
-    height: 400px; 
+
+    height: 400px;
     width: 100%;
-    
-    
     background-image: url('../img/estacionamento.avif');
-    background-size: cover; 
-    background-position: center; 
-    
-    
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    
-    position: relative; 
-    z-index: 1; 
-    color: white; 
+    position: relative;
+    z-index: 1;
+    color: white;
     text-align: center;
 }
 
@@ -94,20 +102,24 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4); 
-    z-index: 0; 
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+
 }
 
+
 .hero-title, .email-input, .promo-text {
-    z-index: 2; 
+    z-index: 2;
     margin-bottom: 20px;
 }
+
 
 .hero-title {
     font-size: 2.5em;
     font-weight: 700;
-    max-width: 60%; 
+    max-width: 60%;
 }
+
 
 .email-input {
     padding: 15px 20px;
@@ -117,6 +129,7 @@
     font-size: 1em;
 }
 
+
 .promo-text {
     font-size: 1.1em;
     font-weight: 400;
@@ -124,30 +137,34 @@
 
 
 /*=====================================================
+
 PARTE DE BAIXO DO SITE
+
 =======================================================*/
 
+
 .beneficios {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-    margin: 30px auto; 
-    width: fit-content; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px auto;
+    width: fit-content;
 }
+
 
 .beneficios img {
     height: 35px;
     width: 35px;
-    margin: 0; 
+    margin: 0;
 }
+
 
 .beneficios p {
-    margin: 0; 
+    margin: 0;
 }
 
 
-
-.botao-verde {
+/*.botao-verde {
     display: inline-block;
     padding: 10px 20px;
     background-color: rgb(2, 216, 2);
@@ -155,11 +172,36 @@ PARTE DE BAIXO DO SITE
     border-radius: 10px;
     font-weight: normal;
     margin: 35px auto 0 auto;
-    margin-left: 440px;
+    margin-left: 750px;
     margin-right: 100;
     align-items: center;
-
 }
+    */
+    .botao-verde {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding: 10px 20px;
+        background-color: rgb(2, 216, 2);
+        color: #ffffff;
+        border-radius: 10px;
+        font-weight: normal;
+        margin: 35px auto;
+        text-align: center;
+    }
+    
+    .botao-verde a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .botao-verde h2 {
+        margin: 0;
+    }
 
 .texto-final {
     width: 600px;
@@ -185,14 +227,172 @@ PARTE DE BAIXO DO SITE
 
 
 
-/*===========================================*/
+
+
 /* Celular e Tablete (Sistema)
-/*===========================================*/
+=============================================*/
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    /* 1. CABEÇALHO */
+    .cabecalho-principal {
+        height: 60px;
+        padding: 0 15px;
+        justify-content: center;
+    }
+
+    .logo-icone {
+        width: 60px;
+        height: 45px;
+        margin-right: 10px;
+    }
+
+    #titulo-texto {
+        font-size: 1.8em;
+    }
+
+    .navegacao-principal {
+        display: none;
+    }
+
+    /* 2. HERO SECTION */
+    .hero-section {
+        height: 300px;
+        padding: 0 15px;
+    }
+
+    .hero-title {
+        font-size: 1.4em; /* Redução para evitar quebra de linha excessiva */
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .email-input {
+        width: 90%; /* Ocupa quase a largura total da tela */
+        padding: 12px 15px;
+        font-size: 0.95em;
+    }
+
+    .promo-text {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+
+    /* 3. RODAPÉ */
+    .beneficios {
+        /* Garante que os 3 blocos de benefício se empilhem verticalmente */
+        flex-direction: column;
+        align-items: flex-start; /* Alinha o texto do benefício à esquerda */
+        gap: 20px;
+        width: 85%; /* Usa uma largura maior para o container */
+        margin: 30px auto;
+        font-size: 1em; 
+    }
+    
+    .beneficios > img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        /* Como o HTML não tem divs, o navegador agrupa texto e imagem */
+    }
+
+    .botao-verde {
+        margin: 30px auto 0 auto;
+        padding: 10px 15px;
+        width: 90%; /* Garante que o botão se expanda (centralizado) */
+        max-width: 350px;
+    }
+    
+    .botao-verde h2 {
+        font-size: 1.2em;
+    }
+
+    .texto-final {
+        max-width: 90%; /* Máximo de 90% da tela */
+        font-size: 1em;
+        padding: 15px 20px;
+        margin: 25px auto 40px auto;
+        border-radius: 10px;
+    }
+}
 
 
 
+/*==============================================================================
+    SISTEMA DO TABLET
+==============================================================================*/
 
 
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    /* 1. CABEÇALHO */
+    .cabecalho-principal {
+        padding: 0 20px;
+    }
+
+    .logo-icone {
+        width: 70px;
+        height: 50px;
+    }
+
+    #titulo-texto {
+        font-size: 2em;
+    }
+
+    .menu-principal {
+        gap: 15px; /* Reduz o espaço entre os itens do menu */
+    }
+
+    .menu-principal li a {
+        /* Altera a direção para coluna para que os links caibam */
+        flex-direction: column; 
+        font-size: 0.95em;
+        text-align: center;
+    }
+
+    .menu-principal li img {
+        margin: 0 0 5px 0; 
+    }
+
+    /* 2. HERO SECTION */
+    .hero-title {
+        font-size: 2em;
+        max-width: 70%;
+    }
+    
+    .email-input {
+        width: 350px; /* Mantém o tamanho do input controlável */
+    }
+
+    /* 3. RODAPÉ */
+    .beneficios {
+        /* O Flexbox é mantido, mas forçamos a quebra se a tela for pequena */
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        gap: 30px 10px; /* Aumenta o espaçamento vertical */
+        margin: 35px auto;
+        width: 90%;
+    }
+    
+    /* Cria uma "base" de largura para cada item em caso de quebra */
+    .beneficios > img,
+    .beneficios > img + img { 
+        /* Regra complexa devido ao HTML. Tenta isolar o agrupamento de itens */
+        /* Flex-basis garante que se couberem, ocupam 30%, senão quebram */
+        flex-basis: auto; 
+        max-width: 45%; /* Limita a largura para garantir que dois itens caibam por linha se houver quebra */
+    }
+    
+
+    .texto-final {
+        max-width: 70%; 
+        padding: 20px 25px;
+    }
+}
 
 /* ----------------------------- Fim do Sistema ---------------------------------- */
-/* FIM DO CSS
+
+
+/* Fim do CSS
