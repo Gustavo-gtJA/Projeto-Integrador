@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabolando</title>
+    <meta name="description" content="Reserve sua vaga de estacionamento em segundos com o Parabolando. Economize tempo e garanta segurança 24h.">
+    <title>Parabolando - Reserva de Vagas</title>
+    
+    <link rel="preload" href="../img/estacionamento.avif" as="image">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -11,51 +15,55 @@
 <body>
     <header class="cabecalho-principal">
         <div class="logo">
-            <img class="logo-icone" src="../img/icone.png" alt="Logo Parabolando">
+            <img class="logo-icone" src="../img/icone.png" alt="Logo Parabolando" width="85" height="60">
             <span id="titulo-texto" class="titulo-texto">Parabolando</span>
         </div>
         <nav class="navegacao-principal">
             <ul class="menu-principal">
-                <li><a href="#"><img src="../img/perfil.png" alt="Ícone Perfil"> Conta</a></li>
-                <li><a href="#"><img src="../img/lupa.png" alt="Ícone Lupa">Procurar Vaga</a></li>
-                <li><a href="#"><img src="../img/data.png" alt="Ícone Calendário">Agendar Vaga</a></li>
+                <li><a href="#"><img src="../img/perfil.png" alt="" aria-hidden="true" width="25" height="25"> Conta</a></li>
+                <li><a href="#"><img src="../img/lupa.png" alt="" aria-hidden="true" width="25" height="25"> Procurar Vaga</a></li>
+                <li><a href="#"><img src="../img/data.png" alt="" aria-hidden="true" width="25" height="25"> Agendar Vaga</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-    
         <div class="hero-section">
             <h1 class="hero-title">
-                Economize Tempo Precioso. Sua Vaga Espera Por Você, Não o Contrário.
+                Economize Tempo Precioso. Sua Vaga Espera Por Você.
             </h1>
             
-            <input type="email" placeholder="E-mail:" class="email-input">
+            <input type="email" placeholder="E-mail:" class="email-input" aria-label="Digite seu e-mail para desconto">
             
             <p class="promo-text">
                 Cadastre-se agora e ganhe 10% de desconto na primeira reserva via app!
             </p>
         </div>
-    
     </main>
 
     <footer>
-    <div class="beneficios">
-        <img src="../img/mundo.png" alt="icone Mundo">Sempre Haverá uma Vaga.
-        <img src="../img/celular.png" alt="icone Celular">Reserve em Segundos, Onde Estiver.
-        <img src="../img/cartao.png" alt="icone Cartao">Direto ao ponto, focado na escolha do cliente.
-    </div>
+        <div class="beneficios">
+            <div class="item-beneficio">
+                <img src="../img/mundo.png" alt="" aria-hidden="true" width="35" height="35">
+                <span>Sempre Haverá uma Vaga.</span>
+            </div>
+            <div class="item-beneficio">
+                <img src="../img/celular.png" alt="" aria-hidden="true" width="35" height="35">
+                <span>Reserve em Segundos.</span>
+            </div>
+            <div class="item-beneficio">
+                <img src="../img/cartao.png" alt="" aria-hidden="true" width="35" height="35">
+                <span>Foco no cliente.</span>
+            </div>
+        </div>
 
-    <div class="botao-verde">
-        <a href="#"><h2>Quero Garantir Minha vaga Agora</h2></a>
-    </div>
+        <div class="botao-verde">
+            <a href="#">Quero Garantir Minha Vaga Agora</a>
+        </div>
 
-    <div class="texto-final">
-        <h4>Não perca mais tempo procurando vaga. Com o Parabolando, você garante sua reserva em segundos e estaciona em um local com vigilância 24 horas, eliminando o estresse e aproveitando cada minuto do seu destino.</h4>
-
-        
-
-        
-    </div>
+        <div class="texto-final">
+            <p>Não perca mais tempo procurando vaga. Com o Parabolando, você garante sua reserva em segundos com vigilância 24 horas.</p>
+        </div>
+    </footer>
 </body>
 </html>
